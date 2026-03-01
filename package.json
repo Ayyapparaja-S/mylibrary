@@ -1,7 +1,7 @@
 {
   "name": "@ayyapparaja/mylibrary",
   "description": "A React component library with Material-UI components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "private": false,
   "main": "./dist/index.cjs.js",
