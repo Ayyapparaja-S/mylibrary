@@ -12,18 +12,28 @@ export default defineConfig({
       },
     }),
     dts({
-      include: ['src'],
+      entryRoot: "src",
+  outDir: "dist",
+  tsconfigPath: "./tsconfig.json",
+  exclude: ["vite.config.ts", "**/*.test.ts", "**/*.stories.tsx"]
     }),
   ],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'MyLibrary',
-      formats: ['es', 'umd'],
-      fileName: (format) => `index.${format === 'es' ? 'es' : 'umd.c'}js`,
+      formats: ['es', 'cjs'],
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', '@mui/material', '@emotion/react', '@emotion/styled'],
+      external: ['react',
+  'react-dom',
+  '@mui/material',
+  '@mui/system',
+  '@mui/icons-material',
+  '@emotion/react',
+  '@emotion/styled',
+  'styled-components'],
       output: {
         globals: {
           react: 'React',
