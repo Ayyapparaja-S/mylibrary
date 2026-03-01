@@ -7,9 +7,9 @@
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
-  "homepage": "https://github.com/yourname/mylibrary#readme",
+  "homepage": "https://github.com/Ayyapparaja-S/mylibrary#readme",
   "bugs": {
-    "url": "https://github.com/yourname/mylibrary/issues"
+    "url": "https://github.com/Ayyapparaja-S/mylibrary/issues"
   },
   "files": [
     "dist"
@@ -33,9 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/mylibrary"
+    "url": "https://github.com/Ayyapparaja-S/mylibrary"
   },
-  "author": "Your Name",
+  "author": "Ayyapparaja S",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
