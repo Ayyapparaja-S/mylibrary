@@ -15,15 +15,20 @@ export const theme = createTheme({
       fontSize: '2.5rem',
       fontWeight: 700,
     },
+    body1: {
+      fontSize: '12px'
+    }
   },
+  spacing: 4,
   components: {
     MuiButton: {
       styleOverrides: {
-        root: {
-          padding: '8px',
-          fontSize: '12px',
+        root: [({theme})=> ({
+          padding: theme.spacing(1),
+          fontSize: theme.typography.body1.fontSize,
           fontWeight: 400,
-        },
+          border: `2px solid ${theme.palette.secondary.main}`
+        })],
       },
     },
   },
